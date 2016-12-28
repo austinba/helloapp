@@ -10,6 +10,6 @@ go: 1.7.4
 install:
 #  - cd $TRAVIS_BUILD_DIR
 #  - go version
-  - go get -u github.com/MasterMinds/glide
+  - go get -u github.com/Masterminds/glide
   - glide install
   - go build

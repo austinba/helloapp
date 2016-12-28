@@ -2,4 +2,14 @@ language: go
 
 go: 1.7.4
 
-install: true
+sudo: required
+
+services:
+  - docker
+
+install:
+  - cd $TRAVIS_BUILD_DIR
+  - go version
+  - go get -u github.com/MasterMinds/glide
+  - glide install
+  - go build
